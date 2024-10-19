@@ -15,8 +15,3 @@ permalink: /archive/
     {% assign date = currentdate %}
   {% endif %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% if forloop.last %}</ul>{% endif %}
-{% endfor %}
-
-<!-- 如果循环结束时<ul>标签没有关闭，添加一个检查 -->
-{% unless forloop.last %}</ul>{% endunless %}
