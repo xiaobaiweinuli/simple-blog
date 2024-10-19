@@ -1,0 +1,31 @@
+---
+---
+
+@import "minima";
+
+// 自定义样式
+.post-categories, .post-tags {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.post-categories a, .post-tags a {
+  background-color: #f1f1f1;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-right: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.post-categories a:hover, .post-tags a:hover {
+  background-color: #e1e1e1;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.8em;
+}
