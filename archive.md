@@ -4,6 +4,8 @@ title: Archive
 permalink: /archive/
 ---
 
+{% assign date = "" %} <!-- 初始化date变量 -->
+
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
