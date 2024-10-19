@@ -4,7 +4,7 @@ title: Archive
 permalink: /archive/
 ---
 
-{% assign date = "" %} <!-- 初始化date变量 -->
+{% assign date = "0000" %} <!-- 初始化date变量为一个不可能的年份 -->
 
 {% for post in site.posts %}
   {% assign currentdate = post.date | date: "%Y" %}
@@ -17,3 +17,6 @@ permalink: /archive/
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
+
+<!-- 如果循环结束时<ul>标签没有关闭，添加一个检查 -->
+{% unless forloop.last %}</ul>{% endunless %}
