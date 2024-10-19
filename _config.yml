@@ -1,0 +1,34 @@
+# 博客基本信息
+title: My Enhanced Blog
+description: A blog with enhanced tags, categories, and comments
+theme: minima
+
+# Disqus 评论系统
+disqus:
+    shortname: your-disqus-shortname
+
+# 添加页面到头部导航
+header_pages:
+  - about.md
+  - tags.md
+  - categories.md
+  - archive.md
+
+# 社交媒体链接
+twitter_username: your_twitter_username
+github_username:  your_github_username
+linkedin_username: your_linkedin_username
+
+# Google Analytics
+google_analytics: UA-XXXXXXXX-X
+
+# 分页
+paginate: 5
+paginate_path: "/page:num/"
+
+# 插件
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

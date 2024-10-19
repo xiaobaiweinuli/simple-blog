@@ -1,0 +1,10 @@
+{
+  "name": "jekyll-blog",
+  "version": "1.0.0",
+  "description": "A Jekyll blog",
+  "scripts": {
+    "build": "jekyll build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
