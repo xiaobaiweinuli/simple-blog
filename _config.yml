@@ -9,15 +9,14 @@ disqus:
 
 # 添加页面到头部导航
 header_pages:
-  - home.md
   - about.md
   - tags.md
   - categories.md
   - archive.md
 
 # 社交媒体链接
-twitter_username: your_twitter_username
-github_username:  your_github_username
+twitter_username: xiaobaiweinuli
+github_username:  xiaobaiweinuli
 linkedin_username: your_linkedin_username
 
 # Google Analytics
