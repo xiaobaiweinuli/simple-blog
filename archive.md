@@ -15,7 +15,7 @@ permalink: /archive/
     {% assign current_year = post_year %}
   {% endif %}
   
-  {{ post.title }}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   
 {% endfor %}
 {% if current_year != nil %}{% endif %}
