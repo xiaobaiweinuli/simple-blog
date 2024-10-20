@@ -5,15 +5,20 @@ permalink: /archive/
 ---
 
 
-{% assign previous_date = nil %}
+{% assign current_year = nil %}
+
 {% for post in site.posts %}
-  {% assign current_date = post.date | date: "%Y-%m-%d" %}
-  {% if current_date != previous_date %}
-    {% if previous_date != nil %}{% endif %}
-    {{ current_date }}
+  {% assign post_year = post.date | date: "%Y" %}
+  
+  {% if post_year != current_year %}
+    {% if current_year != nil %}{% endif %}
+    {{ post_year }}
     
+    {% assign current_year = post_year %}
   {% endif %}
+  
   {{ post.title }}
-  {% assign previous_date = current_date %}
+  
+  {% if forloop.last and current_year == post_year %}{% endif %}
 {% endfor %}
-{% if previous_date != nil %}{% endif %}
+{% if current_year != nil and forloop.last and current_year != site.posts.first.date | date: "%Y" %}{% endif %}
