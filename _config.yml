@@ -1,6 +1,6 @@
 # 博客基本信息
-title: My Enhanced Blog
-description: A blog with enhanced tags, categories, and comments
+title: 星霜笔记的简单博客
+description: 一个带有标签、分类和评论的博客
 theme: minima
 
 # Disqus 评论系统
@@ -9,6 +9,7 @@ disqus:
 
 # 添加页面到头部导航
 header_pages:
+  - home.md
   - about.md
   - tags.md
   - categories.md
