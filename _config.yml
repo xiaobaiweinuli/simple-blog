@@ -5,8 +5,7 @@ theme: minima
 
 # Disqus 评论系统
 disqus:
-    shortname: https://https-xiaobaiweinuli-github-io-blog.disqus.com/admin/install/welcome/
-
+    shortname: https://https-xiaobaiweinuli-github-io-blog.disqus.com/admin/install/platforms/universalcode
 # 添加页面到头部导航
 header_pages:
   - about.md
