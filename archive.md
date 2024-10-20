@@ -15,6 +15,6 @@ permalink: /archive/
 {% endif %}
 
 <li>
-<a href="{{ post.url }}">{{ post.title }}</a></li>
+<a href="/blog/{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 {% if current_year != nil %}{% endif %}
