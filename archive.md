@@ -4,17 +4,17 @@ title: Archive
 permalink: /archive/
 ---
 
-{% assign current_year = nil %}
+
+{% assign previous_date = nil %}
 {% for post in site.posts %}
-{% assign post_year = post.date | date: "%Y" %}
-
-{% if post_year != current_year %}
-{% if current_year != nil %}{% endif %}
-{{ post_year }}
-{% assign current_year = post_year %}
-{% endif %}
-
+  {% assign current_date = post.date | date: "%Y-%m-%d" %}
+  {% if current_date != previous_date %}
+    {% if previous_date != nil %}{% endif %}
+    {{ current_date }}
+    
+  {% endif %}
 <li>
 <a href="/blog/{{ post.url }}">{{ post.title }}</a></li>
+  {% assign previous_date = current_date %}
 {% endfor %}
-{% if current_year != nil %}{% endif %}
+{% if previous_date != nil %}{% endif %}
