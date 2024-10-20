@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Welcome to My Blog"
 date:   2023-05-24 12:00:00 +0800
 categories: [general, introduction]
